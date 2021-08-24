@@ -12,7 +12,7 @@ if (len(dancers.index)>=32):
     with open('C:/Users/plast/OneDrive/Desktop/pairs.txt','w') as file:
         for i in range(0, len(pairs), 2):
             file.write(dancers.loc[pairs[i], 'Танцор'],'vs',dancers.loc[pairs[i + 1], 'Танцор'])
-    file.close
+    file.close()
     file.readline(2)
 elif (len(dancers.index)>=16):
     top16=dancers.sort_values(by='Рейтинг', ascending=False) #сортировка по убыванию рейтинга
